@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/app.js"></script>
+    <title>ИНН</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Валидация ИНН</h1>
+        <div class="form-group d-flex flex-row py-1">
+            <label class="w-30" for="inn-code">Введите ИНН</label>
+            <input class="form-control" type="number" name="" id="innCode" value="3463463460" required>
+            <button class="m-2" onclick="validateInn()">Проверить ИНН</button>
+        </div>
+        <div>
+            <table class="table table-striped align-self-center" >
+                <thead>
+                    <tr>
+                        <th scope = "col" >ИНН</th>
+                        <th scope = "col" >Валидация</th>
+                        <th scope = "col" >М/Ж</th>
+                        <th scope = "col" >Дата рождения</th>
+                    </tr>
+                </thead>
+                <tbody id="resultValidation">
+    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
