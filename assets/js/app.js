@@ -25,7 +25,7 @@ let sex = 0;
 
 let valid = 0;
 
-if (kn == +inn[inn.length-1]){
+if (kn == +inn[inn.length-1] && inn.length == 10){
     valid = 'Код валиден';
     if (+inn[inn.length-2]%2 == 1){
         sex = 'Мужчина';
